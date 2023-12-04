@@ -33,7 +33,7 @@ public class EmailIntegration {
 		
 		CredentialServiceImpl serviceObj = 
 				new CredentialServiceImpl();
-		if (getDepartmentcode() <=4)
+		if (getDepartmentcode() <=4 && getDepartmentcode() >0 )
 		{
 		String emailid = serviceObj.genEmailAddress(firstname,
 				lastname, getDepartmentcode());
